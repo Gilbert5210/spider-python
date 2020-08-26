@@ -1,0 +1,1113 @@
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE6"/>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" >
+<style type="text/css">
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<head>
+
+<link rel="shortcut icon" href="/journalx/images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="/journalx/images/icons/favicon.png"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/global.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/layout.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/tab.css" />
+
+<script type="text/javascript" 
+    src="/journalx/js/stmenu/stmenu.js"></script>
+<script type="text/javascript"
+    src="/journalx/js/tabpane.js"></script>
+    <script type="text/javascript"
+	src="/journalx/js/bulletinBoard.js"></script>
+
+<base target=_self>
+</head>
+
+ <div id="viewdate" style="height:50px;display:none">
+<TABLE width="100%" height="50px" border=0 cellPadding=0 cellSpacing=0> <TBODY> 
+<TD align="middle"  id="times" >
+</TD></TR>
+</TBODY></TABLE> 
+</div>
+<SCRIPT> 
+var now = new Date(); 
+function createtime(){ 
+ var grt= new Date("9/02/2013 10:50:00");
+ now.setTime(now.getTime()+250);
+ days = (grt - now) / 1000 / 60 / 60 / 24; 
+ dnum = Math.floor(days); 
+ hours = (grt - now) / 1000 / 60 / 60 - (24 * dnum);
+ hnum = Math.floor(hours);
+ minutes = (grt - now) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+ mnum = Math.floor(minutes); 
+ document.getElementById("times").innerHTML ='<font color="green" style="font-size:30px;">距升级还有'+(dnum*24*60+ hnum*60 +  mnum+1)+'分钟</font>';
+ if((dnum*24*60+ hnum*60 +  mnum+1)<=0){
+ 	document.getElementById("viewdate").style.display="none";
+ }
+} 
+
+setInterval("createtime()",250); 
+
+</SCRIPT>
+
+
+<!-- 所有包含这个页面的页面，将会实现页面正在加载的提示信息，注意必须放在页面的最前面 -->
+
+
+
+
+<link rel="stylesheet" type="text/css"
+	href="/journalx/loading/style.css" />
+<div id="loading">
+	<div class="loading-indicator">
+		loading...
+	</div>
+</div>
+<script type="text/javascript">
+
+//在页面开始加载的时候执行，删除节点方法
+if (window.attachEvent) 
+{   
+   window.attachEvent("onload", delNode);   
+} 
+else if (window.addEventListener) 
+{   
+   window.addEventListener("load", delNode, false);    
+}
+
+//删除节点
+function  delNode()
+{   
+  var nodeId = "loading";
+  try
+  {   
+	  var div =document.getElementById(nodeId);  
+	  if(div !==null)
+	  {
+		  document.body.removeChild(div);
+		  div=null;    
+ 	  }  
+  }
+  catch(e)
+  {   
+  	   alert("删除ID为"+nodeId+"的节点出现异常");
+  }   
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/magtech.css"/>
+<SCRIPT language="JavaScript" type="text/javascript" src="/journalx/js/correctpng.js" ></SCRIPT> 
+ 
+ <body topmargin="0" leftmargin="0">
+<div>
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+		<td valign="top" style="background:url(/journalx/images/banner.jpg) #3c78b5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+        	<td width="70%" height="36"><table width="99%" border="0" cellspacing="0" cellpadding="0">
+           	<tr>
+            	<td width="6%" align="center"><img src="/journalx/images/contribution/images/renyuan.png" width="34" height="31" /></td>
+                <td width="66%" valign="bottom"><span class="txt_xm">曾婷
+                
+                </span></td>
+                <td width="28%" nowrap><span class="txt_bs STYLE1"><strong>中华诊断学电子杂志--作者投稿</strong></span></td>
+            </tr>
+            </table>
+            </td>
+            <td align="right" style="text-decoration: none;color:white;">
+            		2020-8-26&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="/journalx/Logout.action" class="txt_xm" style="text-decoration: none;color:white;"><b>安全退出</b></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
+            </tr>
+        	</table>
+        	</td>
+        </tr>
+        </table>
+        </td>
+	</tr>
+</table>
+</div>
+
+<title>中华诊断学电子杂志</title>
+<script type="text/javascript" src="/journalx/js/prototype-1.3.1.js"></script>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td width="20%" height="570" valign="top" background="/journalx/images/contribution/images/author_bj.jpg">
+    		<ul id="toolbarc"><nobr>
+        		<li class="openc"></li>
+            	<li class="openc"></li>
+            	<li class="openc"><font size="+1"><b>投稿步骤</b></font></li>
+    			
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							投稿确认书
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							投稿须知
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							版权转让协议
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							安全保密协议
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							输入文章题目
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	      <li class="openc"><img alt="title" src="/journalx/images/contribution/doing.jpg" />&nbsp;&nbsp;<font color="red">
+						
+							
+							
+								输入本文作者信息
+							
+						
+						
+					</font></li>
+            	   
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							输入本文摘要
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							输入本文关键词
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							输入本文学科分类信息
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							输入本文基金资助信息
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							推荐审稿人
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							要求回避审稿人
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							给编辑部留言
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							上传稿件内容
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   
+            	   
+            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+					
+						
+						
+							输入参考文献
+						
+					
+					
+					</li>
+            	   
+            	   
+            	   <li class="openc"><img alt="submit" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;信息确认|正式投稿</li>
+    			<li class="openc"><img alt="successful" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;投稿完成|系统自动答复</li>
+            	
+    		</nobr></ul>
+    	</td>
+        <td width="19" align="center" valign="top"><img src="/journalx/images/contribution/images/z.gif" width="19" height="30" /></td>
+        <td align="center" valign="top"><table style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 98%; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px">
+  		
+  		<form name="frm" id="frm" onsubmit="return next();" style="display:inline;" method="post">
+  		<tr>
+    		<td class="createmanu" width="100%"><table cellpadding="0" border="1" class="list">
+      		
+      		<tr>
+       			<td width="8%" align="center"><b>选择作者</b></td>
+       			<td width="7%" align="center"><b>姓名</b></td>
+       			<td width="7%" align="center"><b>单位</b></td>
+       			<td width="8%" align="center"><b>部门</b></td>
+       			<td width="15%" align="center"><b>通讯地址</b></td>
+       			<td width="7%" align="center"><b>电话</b></td>
+       			<td width="10%" align="center"><b>Email</b></td>
+       			<td width="8%" align="center"><b>邮政编码</b></td>
+       			<td width="5%" align="center"><b>性别</b></td>
+       			<td width="5%" align="center"><b>学位</b></td>
+       			<td width="7%" align="center"><b>职称</b></td>
+       			<td width="5%" align="center"><b>职务</b></td>
+      		</tr>
+      		
+      		
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161456607"  /></td>
+        		<td width="7%">黄彬涛</td>
+        		<td width="7%">
+        		内蒙古医科大学附属医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		内蒙古医科大学附属医院血液科<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		haojunweitianjin@yeah.net<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614180202"  /></td>
+        		<td width="7%">黄炳成</td>
+        		<td width="7%">
+        		山东省寄生虫病防治研究所<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		山东省济宁市太白楼中路11号<br />
+        		</td>
+        		<td width="7%">
+        		15562283896<br />
+        		</td>
+        		<td width="10%">
+        		Hbc863@hotmail.com<br />
+        		</td>
+        		<td width="8%">
+        		272033<br />
+        		</td>
+        		<td width="5%">男性</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161409809"  /></td>
+        		<td width="7%">黄朝光</td>
+        		<td width="7%">
+        		苏州市吴江区中西医结合医院普通外科 江苏 苏州<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		苏州市吴江区中西医结合医院普通外科 江苏 苏州<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		bj2008zk@vip.qq.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161417203"  /></td>
+        		<td width="7%">黄达</td>
+        		<td width="7%">
+        		长治市人民医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		山西省长治市长兴中路502号<br />
+        		</td>
+        		<td width="7%">
+        		18626524003<br />
+        		</td>
+        		<td width="10%">
+        		pugongyingda@163.com<br />
+        		</td>
+        		<td width="8%">
+        		046000<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%">其它（研究生等）</td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161407607"  /></td>
+        		<td width="7%">黄飞</td>
+        		<td width="7%">
+        		中山大学附属第七医院（深圳）<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		广东省深圳市光明新区圳美社区圳园路628号住院部11楼普外科<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		vassonhuang@163.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%">其它（研究生等）</td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614204808"  /></td>
+        		<td width="7%">黄钢红</td>
+        		<td width="7%">
+        		华润武钢总医院西区<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		湖北省武汉市青山区冶金大道29号<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		guys905@126.community<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614204909"  /></td>
+        		<td width="7%">黄钢红</td>
+        		<td width="7%">
+        		华润武钢总医院西区<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		湖北省武汉市青山区冶金大道29号<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		hghys6905@126.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161445304"  /></td>
+        		<td width="7%">黄慧</td>
+        		<td width="7%">
+        		湖北省妇幼保健<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		湖北武汉洪山区街道口湖北省妇幼保健院超声科<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		357050649@qq.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%">其它（研究生等）</td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161428405"  /></td>
+        		<td width="7%">黄剑华</td>
+        		<td width="7%">
+        		广东省佛山市中医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		hjhuaboy@sina.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161450203"  /></td>
+        		<td width="7%">黄利华</td>
+        		<td width="7%">
+        		中南大学湘雅三医院中心实验室<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		1430647643@qq.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161460102"  /></td>
+        		<td width="7%">黄恋恋</td>
+        		<td width="7%">
+        		佛山市第一人民医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		佛山市禅城区岭南大道北81号<br />
+        		</td>
+        		<td width="7%">
+        		83163110<br />
+        		</td>
+        		<td width="10%">
+        		<br />
+        		
+        		chenggangys22@163.com<br />
+        		</td>
+        		<td width="8%">
+        		528000<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161492910"  /></td>
+        		<td width="7%">黄润生</td>
+        		<td width="7%">
+        		常州市第二人民医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		常州市兴隆巷29号（常州二院  B超室）<br />
+        		</td>
+        		<td width="7%">
+        		15295166645<br />
+        		</td>
+        		<td width="10%">
+        		yhabcde1972@126.com<br />
+        		
+        		<br />
+        		</td>
+        		<td width="8%">
+        		213003<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614225404"  /></td>
+        		<td width="7%">黄天从</td>
+        		<td width="7%">
+        		福建医科大学附属第二医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		福建省泉州市中山北路34号<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		HTC0107@163.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161462506"  /></td>
+        		<td width="7%">黄天从</td>
+        		<td width="7%">
+        		福建医科大学附属第二医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		福建省泉州市中山北路34号<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		gianty2005@yahoo.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161462708"  /></td>
+        		<td width="7%">黄天从</td>
+        		<td width="7%">
+        		福建医科大学附属第二医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		福建省泉州市中山北路34号<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		HTC78@163.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161482304"  /></td>
+        		<td width="7%">黄天从</td>
+        		<td width="7%">
+        		福建医科大学附属二院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		泉州市中山北路34号<br />
+        		</td>
+        		<td width="7%">
+        		059522768936<br />
+        		</td>
+        		<td width="10%">
+        		htc0107@sina.com<br />
+        		
+        		<br />
+        		</td>
+        		<td width="8%">
+        		362000<br />
+        		</td>
+        		<td width="5%">男性</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614200303"  /></td>
+        		<td width="7%">黄庭龙</td>
+        		<td width="7%">
+        		福建医科大学附属二院重症治疗科<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		13559572439@139.cn<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161431506"  /></td>
+        		<td width="7%">黄向业</td>
+        		<td width="7%">
+        		济宁医学院附属章丘区人民医院，济南市第六人民医院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		山东省济南市章丘区汇泉路1920号<br />
+        		</td>
+        		<td width="7%">
+        		13864011612<br />
+        		</td>
+        		<td width="10%">
+        		<br />
+        		
+        		hxye1984@163.com<br />
+        		</td>
+        		<td width="8%">
+        		250200<br />
+        		</td>
+        		<td width="5%">男性</td>
+        		<td width="5%"></td>
+        		<td width="5%">其它（研究生等）</td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161434102"  /></td>
+        		<td width="7%">黄性国</td>
+        		<td width="7%">
+        		济宁医学院法医学与医学检验学院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		济宁市太白湖新区荷花路133号南实验楼455房间<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		384791210@qq.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614233505"  /></td>
+        		<td width="7%">黄颖</td>
+        		<td width="7%">
+        		中南大学湘雅医院内科学、诊断学教研室<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		湖南省长沙市开福区湘雅路87号<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		16376315@qq.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614181404"  /></td>
+        		<td width="7%">黄勇</td>
+        		<td width="7%">
+        		山东省烟台毓璜顶医院烧伤整形美容外科<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		山东省烟台毓璜顶医院烧伤整形美容外科<br />
+        		</td>
+        		<td width="7%">
+        		13964517304<br />
+        		</td>
+        		<td width="10%">
+        		hyong915@sina.com<br />
+        		
+        		renxia0615@126.com<br />
+        		</td>
+        		<td width="8%">
+        		264000<br />
+        		</td>
+        		<td width="5%">男性</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161420304"  /></td>
+        		<td width="7%">黄园园</td>
+        		<td width="7%">
+        		济宁医学院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		山东省济宁市任城区古槐路济医附院<br />
+        		</td>
+        		<td width="7%">
+        		17853753663<br />
+        		</td>
+        		<td width="10%">
+        		17853753663@139.com<br />
+        		
+        		<br />
+        		</td>
+        		<td width="8%">
+        		272000<br />
+        		</td>
+        		<td width="5%">女性</td>
+        		<td width="5%"></td>
+        		<td width="5%">其它（研究生等）</td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		<tr>
+        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614205909"  /></td>
+        		<td width="7%">黄志诚</td>
+        		<td width="7%">
+        		济宁医学院<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="15%">
+        		日照市东港区学苑路669号收发室<br />
+        		</td>
+        		<td width="7%">
+        		<br />
+        		</td>
+        		<td width="10%">
+        		hzc3629@163.com<br />
+        		</td>
+        		<td width="8%">
+        		<br />
+        		</td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+        		<td width="5%"></td>
+      		</tr>
+      		
+      		
+   		</table></td>
+  	</tr>
+  	<tr>
+    	<td class="createmanu">
+    		<input type="hidden" name="webManuscript.id" value="3161470304" />
+    		<input type="hidden" name="personSearch.name" value="黄
+" />
+    		<input type="hidden" name="personSearch.disallemail" value="" />
+    	</td>
+  	</tr>
+  	<tr>
+  		<td align="left">
+			<b>说明:</b><br>(1) 如果您确认以上作者是本文作者之一, 请点击上面选择按钮,然后点下面的“加为本文作者”。<br>(2) 如果以上作者都不是本文作者, 请点击"都不是"按钮直接添加。<br>(3) 如果您确认是作者之一, 而上面显示内容又不准确, 则请他本人登陆系统进行修改, 本系统不提供修改他人信息的功能。
+			
+	  	</td>
+	</tr>
+  	<tr>
+    	<td align="center">
+    		<input class="my_button" type="button" value="取消" onclick="window.location.href='/journalx/author/Contribution!create22.action?id=3161470304&flag=0&processId=1161461607'" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		<input class="my_button" type="submit" value="加入本文作者" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="my_button" type="button"  value="都不是" onclick="cancel()" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	    
+    	</td>
+  	</tr>
+  	</form>
+      </table></td>
+  </tr>
+</table>
+<script type="text/javascript">
+function next(){
+    
+    if (document.all || document.documentMode == 10){//radéè¦çæ¯ä¸ä¸ªéå
+
+        var rad=document.getElementsByName("sid");
+    }else{//jsæ¡æ¶ä¸­å·²ç»ä½äºä¿®æ¹
+
+    	var rad=$("sid");
+    }
+	var sId;
+	if(rad.length>0){
+		for(var i=0;i<rad.length;i++){
+			if(rad[i].checked){
+				sId=rad[i].value;
+				break;
+			}
+		}
+	}
+	else{
+		if(rad.checked){
+			sId=rad.value;
+		}
+	}
+	if((sId=="")||(sId==undefined)||(sId==null)){
+		alert('请选择要添加的作者');
+		return false;
+	}
+	else{
+		$("frm").action='/journalx/author/Contribution!addAuthor.action?id=3161470304&flag=0&processId=1161461607&sId='+sId;
+		
+		//if($("commc").checked){
+    	//	$("frm").action=$("frm").action+"&iscomm=T";
+    	//}
+    	
+		return true;
+	}
+}
+function cancel(){
+	$("frm").action='/journalx/author/Contribution!newAuthor.action?id=3161470304&flag=0&processId=1161461607';
+	$("frm").submit();
+	return true;
+}
+window.onload=function(){
+
+}
+</script>
+
+
+<div id="footer" style="width:100%;">
+  <table style="border-collapse:collapse;border:0px;width:100%;">
+    <tr>
+      <td style="background-color:#bbbbbb;height:1px;">      </td>
+    </tr>
+    <tr>
+      <td style="background-color:#E6EDF8;text-align:center;">
+        版权所有
+        -
+        北京玛格泰克科技发展有限公司&nbsp;&nbsp;[软著登字第 112626 号]
+      </td>
+    </tr>
+    <tr>
+      <td style="height:12px;background: transparent url(/journalx/images/border/border_bottom.gif) repeat-x 0 0"></td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</body>
+</html>
+
