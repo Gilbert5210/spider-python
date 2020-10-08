@@ -1,7 +1,6 @@
 
 
 
-
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE6"/>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" >
@@ -12,18 +11,9 @@ o\:*         { behavior: url(#default#VML) }
 </style>
 <head>
 
-<link rel="shortcut icon" href="/journalx/images/icons/favicon.ico"/>
-<link rel="icon" type="image/png" href="/journalx/images/icons/favicon.png"/>
-<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/global.css"/>
-<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/layout.css"/>
-<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/tab.css" />
-
-<script type="text/javascript" 
-    src="/journalx/js/stmenu/stmenu.js"></script>
-<script type="text/javascript"
-    src="/journalx/js/tabpane.js"></script>
-    <script type="text/javascript"
-	src="/journalx/js/bulletinBoard.js"></script>
+<link rel="shortcut icon" href="/journalx_zgzlwk/images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="/journalx_zgzlwk/images/icons/favicon.png"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/journalx_zgzlwk/styles/magtechall.css"/>
 
 <base target=_self>
 </head>
@@ -35,6 +25,7 @@ o\:*         { behavior: url(#default#VML) }
 </TBODY></TABLE> 
 </div>
 <SCRIPT> 
+
 var now = new Date(); 
 function createtime(){ 
  var grt= new Date("9/02/2013 10:50:00");
@@ -62,7 +53,7 @@ setInterval("createtime()",250);
 
 
 <link rel="stylesheet" type="text/css"
-	href="/journalx/loading/style.css" />
+	href="/journalx_zgzlwk/loading/style.css" />
 <div id="loading">
 	<div class="loading-indicator">
 		loading...
@@ -109,28 +100,27 @@ function  delNode()
 
 
 
-<link rel="stylesheet" type="text/css" media="screen" href="/journalx/styles/magtech.css"/>
-<SCRIPT language="JavaScript" type="text/javascript" src="/journalx/js/correctpng.js" ></SCRIPT> 
+<link rel="stylesheet" type="text/css" media="screen" href="/journalx_zgzlwk/styles/magtechall.css"/>
  
  <body topmargin="0" leftmargin="0">
 <div>
 <table width="100%" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-		<td valign="top" style="background:url(/journalx/images/banner.jpg) #3c78b5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<td valign="top" style="background:url(/journalx_zgzlwk/images/banner.jpg) #3c78b5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
         	<td width="70%" height="36"><table width="99%" border="0" cellspacing="0" cellpadding="0">
            	<tr>
-            	<td width="6%" align="center"><img src="/journalx/images/contribution/images/renyuan.png" width="34" height="31" /></td>
+            	<td width="6%" align="center"><img src="/journalx_zgzlwk/images/contribution/images/renyuan.png" width="34" height="31" /></td>
                 <td width="66%" valign="bottom"><span class="txt_xm">曾婷
                 
                 </span></td>
-                <td width="28%" nowrap><span class="txt_bs STYLE1"><strong>中华诊断学电子杂志--作者投稿</strong></span></td>
+                <td width="28%" nowrap><span class="txt_bs STYLE1"><strong>中国肿瘤外科杂志--作者投稿</strong></span></td>
             </tr>
             </table>
             </td>
             <td align="right" style="text-decoration: none;color:white;">
-            		2020-8-26&nbsp;&nbsp;|&nbsp;&nbsp;
-					<a href="/journalx/Logout.action" class="txt_xm" style="text-decoration: none;color:white;"><b>安全退出</b></a>
+            		2020-9-28&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="/journalx_zgzlwk/Logout.action" class="txt_xm" style="text-decoration: none;color:white;"><b>安全退出</b></a>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
             </tr>
@@ -143,950 +133,930 @@ function  delNode()
 </table>
 </div>
 
-<title>中华诊断学电子杂志</title>
-<script type="text/javascript" src="/journalx/js/prototype-1.3.1.js"></script>
+<title>中国肿瘤外科杂志</title>
+<script type="text/javascript"
+	src="/journalx_zgzlwk/js/mjaogutneaclhx.js"></script>
 
-<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<script language="javascript">
+
+	var RowCount="1";
+	if(RowCount==0)
+	RowCount=1;
+	var StrOnSelect=0;
+	XHArray=new Array(RowCount-1);
+	TXArray=new Array(RowCount-1);
+	var lastTr;
+	var sTr;
+	var StrLastXH;
+	var checkedradio=0;
+	function trClick(sXuhao, obj,evt){
+		
+		lastTr = obj;
+        if (document.all){
+    		sTr=event.srcElement;
+		}else{
+		    var myEvent = evt?evt:(window.event?window.event:null)
+	    	sTr=myEvent.target;
+		}
+
+		while(sTr.tagName!="TR"){
+    		sTr=sTr.parentNode;
+		}
+		StrOnSelect=sTr.rowIndex;
+	}
+
+	function Set_XH(){
+		for (i=1;i<=RowCount;i++){
+		XHArray[i]=i;
+	}
+	}
+	function Get_XH(){
+		str="";
+		for (i=1;i<=RowCount;i++){
+			str=str+XHArray[i]+",";
+		}
+		return str;
+	}
+	Set_XH();
+
+function moveUp(sXuhao, obj,evt){
+		lastTr = obj;
+        if (document.all){
+    		sTr=event.srcElement;
+		}else{
+		    var myEvent = evt?evt:(window.event?window.event:null)
+	    	sTr=myEvent.target;
+		}
+
+		while(sTr.tagName!="TR"){
+    		sTr=sTr.parentNode;
+		}
+	StrOnSelect=sTr.rowIndex;
+    currobj = sTr;
+    var i;
+     var myEvent = evt?evt:(window.event?window.event:null)
+	    	sTr=myEvent.target;
+    acomm=document.getElementsByName("comm");
+    
+    currindex = currobj.rowIndex;
+	i=currindex;
+	
+    if(currindex==1){
+    }else{
+        beforeObj = document.getElementById("Ttable").rows[currindex-1];
+        try{
+            currobj.parentNode.insertBefore(currobj, beforeObj);
+            i=XHArray[currindex-1];
+            XHArray[currindex-1]=XHArray[currindex];
+            XHArray[currindex]=i;
+            $('txtxuhaof').value=Get_XH();
+            $('txtxuhao').value=$('txtxuhaof').value;
+        }catch(err){
+        
+        }
+ 
+	}
+    resetFirstAuthor();
+}
+
+function moveDown(sXuhao, obj,evt){
+
+		lastTr = obj;
+        if (document.all){
+    		sTr=event.srcElement;
+		}else{
+		    var myEvent = evt?evt:(window.event?window.event:null)
+	    	sTr=myEvent.target;
+		}
+
+		while(sTr.tagName!="TR"){
+    		sTr=sTr.parentNode;
+		}
+	StrOnSelect=sTr.rowIndex;
+    currobj = sTr;
+    
+     var i;
+    acomm=document.getElementsByName("comm");
+    
+    currindex = currobj.rowIndex;
+	i=currindex;
+    beforeObj = document.getElementById("Ttable").rows[currindex + 1];
+     
+    try{
+        currobj.parentNode.insertBefore(currobj, beforeObj.nextSibling);
+        i=XHArray[currindex+1];
+        XHArray[currindex+1]=XHArray[currindex];
+        XHArray[currindex]=i;
+        $('txtxuhaof').value=Get_XH();
+        $('txtxuhao').value=$('txtxuhaof').value;
+    }catch(err){
+
+    }
+    resetFirstAuthor();
+}
+
+function resetFirstAuthor(){
+	var arr=document.getElementsByName("firstAuthorflag");
+	for(var i=0;i<arr.length;i++){
+		var n=arr[i].id.replace("firstAuthorflag","");
+		if(i==0){
+			document.getElementById("firstAuthor"+n).style.display="block";
+		}else{
+			document.getElementById("firstAuthor"+n).style.display="none";
+		}
+	}
+}
+
+
+</script>
+<table width="100%" border="0" align="center" cellpadding="0"
+	cellspacing="0">
 	<tr>
-    	<td width="20%" height="570" valign="top" background="/journalx/images/contribution/images/author_bj.jpg">
-    		<ul id="toolbarc"><nobr>
-        		<li class="openc"></li>
-            	<li class="openc"></li>
-            	<li class="openc"><font size="+1"><b>投稿步骤</b></font></li>
-    			
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
-						
-						
-							投稿确认书
-						
-					
-					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
-						
-						
-							投稿须知
-						
-					
-					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
-						
-						
-							版权转让协议
-						
-					
-					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
-						
-						
-							安全保密协议
-						
-					
-					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+	   
+		<td width="20%" height="570" valign="top"
+			background="/journalx_zgzlwk/images/contribution/images/author_bj.jpg">
+		   
+
+<ul id="toolbarc">
+	<nobr>
+	<li class="openc"></li>
+	<li class="openc"></li>
+	<li class="openc"><font size="+1"><b>投稿步骤</b></font></li>
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							输入文章题目
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	      <li class="openc"><img alt="title" src="/journalx/images/contribution/doing.jpg" />&nbsp;&nbsp;<font color="red">
-						
-							
-							
-								输入本文作者信息
-							
-						
-						
-					</font></li>
-            	   
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+			    
+			</li>
+		
+	
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/doing.jpg" />&nbsp;&nbsp;<font
+				color="red">
+				
 					
+					
+						输入本文作者信息
+					
+				
+				
+				</font></li>
+		
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							输入本文摘要
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							输入本文关键词
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							输入本文学科分类信息
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							输入本文基金资助信息
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							推荐审稿人
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							要求回避审稿人
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							给编辑部留言
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							上传稿件内容
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   
-            	   
-            	   <li class="openc"><img alt="title" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
+						
+						
+							有无介绍信
+						
 					
+					
+			    
+			</li>
+		
+	
+		
+		
+			<li class="openc"><img title="title"
+				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				
+			    
+				    
 						
 						
 							输入参考文献
 						
 					
 					
-					</li>
-            	   
-            	   
-            	   <li class="openc"><img alt="submit" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;信息确认|正式投稿</li>
-    			<li class="openc"><img alt="successful" src="/journalx/images/contribution/notdo.jpg" />&nbsp;&nbsp;投稿完成|系统自动答复</li>
-            	
-    		</nobr></ul>
-    	</td>
-        <td width="19" align="center" valign="top"><img src="/journalx/images/contribution/images/z.gif" width="19" height="30" /></td>
-        <td align="center" valign="top"><table style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 98%; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px">
-  		
-  		<form name="frm" id="frm" onsubmit="return next();" style="display:inline;" method="post">
-  		<tr>
-    		<td class="createmanu" width="100%"><table cellpadding="0" border="1" class="list">
-      		
-      		<tr>
-       			<td width="8%" align="center"><b>选择作者</b></td>
-       			<td width="7%" align="center"><b>姓名</b></td>
-       			<td width="7%" align="center"><b>单位</b></td>
-       			<td width="8%" align="center"><b>部门</b></td>
-       			<td width="15%" align="center"><b>通讯地址</b></td>
-       			<td width="7%" align="center"><b>电话</b></td>
-       			<td width="10%" align="center"><b>Email</b></td>
-       			<td width="8%" align="center"><b>邮政编码</b></td>
-       			<td width="5%" align="center"><b>性别</b></td>
-       			<td width="5%" align="center"><b>学位</b></td>
-       			<td width="7%" align="center"><b>职称</b></td>
-       			<td width="5%" align="center"><b>职务</b></td>
-      		</tr>
-      		
-      		
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161456607"  /></td>
-        		<td width="7%">黄彬涛</td>
-        		<td width="7%">
-        		内蒙古医科大学附属医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		内蒙古医科大学附属医院血液科<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		haojunweitianjin@yeah.net<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614180202"  /></td>
-        		<td width="7%">黄炳成</td>
-        		<td width="7%">
-        		山东省寄生虫病防治研究所<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		山东省济宁市太白楼中路11号<br />
-        		</td>
-        		<td width="7%">
-        		15562283896<br />
-        		</td>
-        		<td width="10%">
-        		Hbc863@hotmail.com<br />
-        		</td>
-        		<td width="8%">
-        		272033<br />
-        		</td>
-        		<td width="5%">男性</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161409809"  /></td>
-        		<td width="7%">黄朝光</td>
-        		<td width="7%">
-        		苏州市吴江区中西医结合医院普通外科 江苏 苏州<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		苏州市吴江区中西医结合医院普通外科 江苏 苏州<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		bj2008zk@vip.qq.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161417203"  /></td>
-        		<td width="7%">黄达</td>
-        		<td width="7%">
-        		长治市人民医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		山西省长治市长兴中路502号<br />
-        		</td>
-        		<td width="7%">
-        		18626524003<br />
-        		</td>
-        		<td width="10%">
-        		pugongyingda@163.com<br />
-        		</td>
-        		<td width="8%">
-        		046000<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%">其它（研究生等）</td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161407607"  /></td>
-        		<td width="7%">黄飞</td>
-        		<td width="7%">
-        		中山大学附属第七医院（深圳）<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		广东省深圳市光明新区圳美社区圳园路628号住院部11楼普外科<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		vassonhuang@163.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%">其它（研究生等）</td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614204808"  /></td>
-        		<td width="7%">黄钢红</td>
-        		<td width="7%">
-        		华润武钢总医院西区<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		湖北省武汉市青山区冶金大道29号<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		guys905@126.community<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614204909"  /></td>
-        		<td width="7%">黄钢红</td>
-        		<td width="7%">
-        		华润武钢总医院西区<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		湖北省武汉市青山区冶金大道29号<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		hghys6905@126.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161445304"  /></td>
-        		<td width="7%">黄慧</td>
-        		<td width="7%">
-        		湖北省妇幼保健<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		湖北武汉洪山区街道口湖北省妇幼保健院超声科<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		357050649@qq.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%">其它（研究生等）</td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161428405"  /></td>
-        		<td width="7%">黄剑华</td>
-        		<td width="7%">
-        		广东省佛山市中医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		hjhuaboy@sina.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161450203"  /></td>
-        		<td width="7%">黄利华</td>
-        		<td width="7%">
-        		中南大学湘雅三医院中心实验室<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		1430647643@qq.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161460102"  /></td>
-        		<td width="7%">黄恋恋</td>
-        		<td width="7%">
-        		佛山市第一人民医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		佛山市禅城区岭南大道北81号<br />
-        		</td>
-        		<td width="7%">
-        		83163110<br />
-        		</td>
-        		<td width="10%">
-        		<br />
-        		
-        		chenggangys22@163.com<br />
-        		</td>
-        		<td width="8%">
-        		528000<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161492910"  /></td>
-        		<td width="7%">黄润生</td>
-        		<td width="7%">
-        		常州市第二人民医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		常州市兴隆巷29号（常州二院  B超室）<br />
-        		</td>
-        		<td width="7%">
-        		15295166645<br />
-        		</td>
-        		<td width="10%">
-        		yhabcde1972@126.com<br />
-        		
-        		<br />
-        		</td>
-        		<td width="8%">
-        		213003<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614225404"  /></td>
-        		<td width="7%">黄天从</td>
-        		<td width="7%">
-        		福建医科大学附属第二医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		福建省泉州市中山北路34号<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		HTC0107@163.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161462506"  /></td>
-        		<td width="7%">黄天从</td>
-        		<td width="7%">
-        		福建医科大学附属第二医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		福建省泉州市中山北路34号<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		gianty2005@yahoo.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161462708"  /></td>
-        		<td width="7%">黄天从</td>
-        		<td width="7%">
-        		福建医科大学附属第二医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		福建省泉州市中山北路34号<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		HTC78@163.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="2161482304"  /></td>
-        		<td width="7%">黄天从</td>
-        		<td width="7%">
-        		福建医科大学附属二院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		泉州市中山北路34号<br />
-        		</td>
-        		<td width="7%">
-        		059522768936<br />
-        		</td>
-        		<td width="10%">
-        		htc0107@sina.com<br />
-        		
-        		<br />
-        		</td>
-        		<td width="8%">
-        		362000<br />
-        		</td>
-        		<td width="5%">男性</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614200303"  /></td>
-        		<td width="7%">黄庭龙</td>
-        		<td width="7%">
-        		福建医科大学附属二院重症治疗科<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		13559572439@139.cn<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161431506"  /></td>
-        		<td width="7%">黄向业</td>
-        		<td width="7%">
-        		济宁医学院附属章丘区人民医院，济南市第六人民医院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		山东省济南市章丘区汇泉路1920号<br />
-        		</td>
-        		<td width="7%">
-        		13864011612<br />
-        		</td>
-        		<td width="10%">
-        		<br />
-        		
-        		hxye1984@163.com<br />
-        		</td>
-        		<td width="8%">
-        		250200<br />
-        		</td>
-        		<td width="5%">男性</td>
-        		<td width="5%"></td>
-        		<td width="5%">其它（研究生等）</td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161434102"  /></td>
-        		<td width="7%">黄性国</td>
-        		<td width="7%">
-        		济宁医学院法医学与医学检验学院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		济宁市太白湖新区荷花路133号南实验楼455房间<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		384791210@qq.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614233505"  /></td>
-        		<td width="7%">黄颖</td>
-        		<td width="7%">
-        		中南大学湘雅医院内科学、诊断学教研室<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		湖南省长沙市开福区湘雅路87号<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		16376315@qq.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614181404"  /></td>
-        		<td width="7%">黄勇</td>
-        		<td width="7%">
-        		山东省烟台毓璜顶医院烧伤整形美容外科<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		山东省烟台毓璜顶医院烧伤整形美容外科<br />
-        		</td>
-        		<td width="7%">
-        		13964517304<br />
-        		</td>
-        		<td width="10%">
-        		hyong915@sina.com<br />
-        		
-        		renxia0615@126.com<br />
-        		</td>
-        		<td width="8%">
-        		264000<br />
-        		</td>
-        		<td width="5%">男性</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="3161420304"  /></td>
-        		<td width="7%">黄园园</td>
-        		<td width="7%">
-        		济宁医学院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		山东省济宁市任城区古槐路济医附院<br />
-        		</td>
-        		<td width="7%">
-        		17853753663<br />
-        		</td>
-        		<td width="10%">
-        		17853753663@139.com<br />
-        		
-        		<br />
-        		</td>
-        		<td width="8%">
-        		272000<br />
-        		</td>
-        		<td width="5%">女性</td>
-        		<td width="5%"></td>
-        		<td width="5%">其它（研究生等）</td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		<tr>
-        		<td width="8%" align="center"><input type="radio" name="sid"  value="1614205909"  /></td>
-        		<td width="7%">黄志诚</td>
-        		<td width="7%">
-        		济宁医学院<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="15%">
-        		日照市东港区学苑路669号收发室<br />
-        		</td>
-        		<td width="7%">
-        		<br />
-        		</td>
-        		<td width="10%">
-        		hzc3629@163.com<br />
-        		</td>
-        		<td width="8%">
-        		<br />
-        		</td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-        		<td width="5%"></td>
-      		</tr>
-      		
-      		
-   		</table></td>
-  	</tr>
-  	<tr>
-    	<td class="createmanu">
-    		<input type="hidden" name="webManuscript.id" value="3161470304" />
-    		<input type="hidden" name="personSearch.name" value="黄
-" />
-    		<input type="hidden" name="personSearch.disallemail" value="" />
-    	</td>
-  	</tr>
-  	<tr>
-  		<td align="left">
-			<b>说明:</b><br>(1) 如果您确认以上作者是本文作者之一, 请点击上面选择按钮,然后点下面的“加为本文作者”。<br>(2) 如果以上作者都不是本文作者, 请点击"都不是"按钮直接添加。<br>(3) 如果您确认是作者之一, 而上面显示内容又不准确, 则请他本人登陆系统进行修改, 本系统不提供修改他人信息的功能。
+			    
+			</li>
+		
+	
+	<li class="openc"><img title="submit"
+		src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+		
+		
+		信息确认|正式投稿
+		
+	</li>
+	<li class="openc"><img title="successful"
+		src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;投稿完成|系统自动答复</li>
+	</nobr>
+</ul>
+
+		</td>
+		
+		<td width="19" align="center" valign="top"><img
+			src="/journalx_zgzlwk/images/contribution/images/z.gif"
+			width="19" height="30" /></td>
+		<td align="center" valign="top">
+		<table
+			style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 98%; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px">
 			
-	  	</td>
+			<tbody>
+				<tr>
+					<td height="60" align="middle">
+					<table width="48%">
+						<tbody>
+							<tr>
+							
+								
+		                          <td><a
+										href="/journalx_zgzlwk/author/Contribution!goBack.action?id=7163720203&processId=1163763809"><img
+										src="/journalx_zgzlwk/images/contribution/images/an_syb.jpg" /></a></td>
+		                        
+		                          <td><a href="#" onclick="next()" style="cursor:hand"><img src="/journalx_zgzlwk/images/contribution/images/an_xyb1.jpg" width="68" height="25" /></a></td>
+		                       <td><a href="#"
+									onclick="location.replace('/journalx_zgzlwk/author/Author.action')"
+									style="cursor:hand"><img
+									src="/journalx_zgzlwk/images/contribution/images/an_fh.jpg"
+									width="92" height="25" /></a></td>
+							
+							</tr>
+						</tbody>
+					</table>
+					</td>
+				</tr>
+			</tbody>
+
+			<tr>
+				<td align="left">
+			
+  			   
+  			       
+			    			
+			    			关于第二作者
+			    			
+  			   
+  			   	
+				 </td>
+			</tr>
+			
+			<form method="post" name="frmn" id="frmn" style="DISPLAY: inline">
+			<tr>
+				<td class="createmanu" width="100%">
+				<div style="border:1 solid #D3D3D3;width:100%">
+				<div id="manu_author" style="display:none;margin-top:5px;"><font color="red"><b>&nbsp;<font color="red"><b>新添加作者的姓名和E-mail至少填一个</b></font></b></font></div>
+				<table width="100%" border="0" cellpadding="0" frame="below">
+					<tbody>
+						
+							<tr id="register_error" style="display:inline;margin-top:5px;"
+								bgcolor="F7F7EE">
+								<td colspan="6" height="28"><font color="red">
+								验证码错误 
+								</font></td>
+							</tr>
+						
+						<tr height="30">
+							<td align="right" width="7%"><b>姓名</b>&nbsp;</td>
+							<td width="16%" align="left"><input name="personSearch.name" id="personSearch.name"
+								type="text" class="s_text" />
+								<input type="hidden" id="personSearch.rolsesp" name="personSearch.rolsesp" value="3"/></td>
+							<td align="right" width="7%"><b>或</b>&nbsp;</td>
+							<td align="right" width="7%"><b>E-mail</b>&nbsp;</td>
+							<td width="18%" align="left"><input class="s_text" id="personSearch.email"
+								name="personSearch.email" type="text" /></td>
+							<td width="5%"><b>验证码:&nbsp;</b></td>
+							<td width="10%"><input type="text" name="randomCode" style="width:70%" value="" tabindex="2" id="randomCode" /></td>
+							<td width="10%"><img id="randomCodePic" src="kaptcha.jpg" style="cursor: pointer;margin-bottom: 5px;" onclick="document.getElementById('randomCodePic').src='/journalx_zgzlwk/kaptcha.jpg?d_a_='+new Date().getTime();"></td>
+							<td width="" align="left">
+								<a href="javascript:void()" onclick="document.getElementById('randomCodePic').src='/journalx_zgzlwk/kaptcha.jpg?d_a_='+new Date().getTime();" class="style21" style=""><ww:text name="click.to.refresh" /></a>
+								<span class="txt_red"><ww:text name="author.register.required" /></span>
+								<span id="randomCodename"  style="color: red;"></span>
+								<input type="button" onclick="check()" value="添加作者">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				</td>
+			</tr>
+			<input type="hidden" name="txtxuhaof" />
+			<input type="hidden" name="txzzxhf" />
+
+			<tr>
+				<td><input type="radio" name="comm"  style="display:none" id="jlnull"/>
+				<input type="hidden" id="disonecompany" name="disonecompany" value="广东省人民医院"/>
+				<input type="hidden" id="disoneaddress" name="disoneaddress" value="广东省广州市谢家112号"/>
+				<input type="hidden" id="disonepostcode" name="disonepostcode" value="020331"/>
+				<input type="hidden" id="email" name="email" value="3348575074@qq.com"/>				
+				
+				<br/>
+				<div style="border:1 solid #D3D3D3;width:100%">
+				<b>本文作者(1)</b>
+			         
+				<table class="list" id="Ttable" cellpadding="2" border="1">
+					<tbody>
+						<tr bgcolor="#EEFFF1" class="easytable">
+							<td width="8%" align="center"><b>通讯作者
+								</b></td>
+							<td width="8%" align="center"><b>第一作者
+								</b></td>
+							<td width="7%" align="center"><b>姓名</b></td>
+							<td width="20%" align="center"><b>单位</b></td>
+							<td width="8%" align="center"><b>部门</b></td>
+							<td width="12%" align="center"><b>通讯地址</b></td>
+							
+							<td width="10%" align="center"><b>邮政编码</b></td>
+							<td width="6%" align="center"><b>学位</b></td>
+							<td width="6%" align="center"><b>删除</b></td>
+							<td width="15%" align="center"><b><NOBR>调整顺序</NOBR></b></td>
+							<!-- <td
+								rowspan="2">
+							 <table cellpadding="0" border="0" class="list">
+								<tr>
+									<td align="center" nowrap><b>调整顺序</b></td>
+								</tr>
+								<tr>
+									<td align="center"><input type="button"
+										value="↑" onClick="moveUp();" /><br />
+									<input type="button" value="↓"
+										onClick="moveDown();" /></td>
+								</tr>
+							</table>
+							</td>-->
+						</tr>
+						
+							<tr
+								onClick="trClick('0', this,event)">
+								<td align="center"><input type="radio" name="comm" id="comm0"
+									style="border:0px groove gray"
+									value="9163763203" onclick='checkcompanyandpostcode("广东省人民医院","广东省广州市谢家112号","020331","3348575074@qq.com");'
+									checked />
+									<input type="hidden" id="one_disonecompany"  value="广东省人民医院"/>
+				                    <input type="hidden" id="one_disoneaddress"  value="广东省广州市谢家112号"/>
+				                    <input type="hidden" id="one_disonepostcode"  value="020331"/>
+				                    <input type="hidden" id="one_email"  value="3348575074@qq.com"/>
+									
+									</td>
+								<td align="center"><input id="firstAuthorflag9163763203" name="firstAuthorflag" style="display:none;"/>
+									<div id="firstAuthor9163763203" style="display: none;">√</div>
+								</td>
+								<td>曾婷</td>
+								<td>
+									广东省人民医院
+									<br />
+								</td>
+								<td>
+									精神科
+									<br />
+								</td>
+								<td>
+									广东省广州市谢家112号
+									<br />
+								</td>
+								
+								
+								<td>
+									020331
+									<br />
+								</td>
+								<td></td>
+								<td align="center">
+								 
+								</td>
+								<td align="center"><input  type="button"
+										value="↑" onClick="moveUp('0', this,event);" /><br />
+									<input  type="button" value="↓"
+										onClick="moveDown('0', this,event);" /></td>
+							</tr>
+						
+					</tbody>
+					
+				</table>
+				</div>
+				 <input type="hidden" name="idList" id ="idList" value=""/>
+				</td>
+			</tr>
+			<tr>
+			   <td height="30">&nbsp;
+			   	（如果您发现数据库中的人员信息有误(特别是Email和电话)，请在此栏目中填写其正确信息，编辑部将根据您提供的信息进行更正。谢谢!）
+			   </td>
+			</tr>
+			<tr>
+			   <td height="30">
+				
+					<table width="100%">
+					<tr>
+					<td class="createmanu" align="left" width="100px">
+						人员库信息纠错
+					</td>
+					<td class="createmanu" align="left">
+		                 <textarea  name="webManuscript.personNeedChangeRemark" id="webManuscript.personNeedChangeRemark" rows="4" style="width: 100%;" cols="20"></textarea>
+					</td>
+					</tr>
+					</table>
+					<input type="hidden" name="txtxuhao" />
+					<input type="hidden" name="txzzxh" />
+					
+				</form>
+			</td>
+			</tr>
+			<tr>
+			   <td height="30">&nbsp;
+			   </td>
+			</tr>
+			
+  			
+		</table>
+		</td>
 	</tr>
-  	<tr>
-    	<td align="center">
-    		<input class="my_button" type="button" value="取消" onclick="window.location.href='/journalx/author/Contribution!create22.action?id=3161470304&flag=0&processId=1161461607'" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    		<input class="my_button" type="submit" value="加入本文作者" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input class="my_button" type="button"  value="都不是" onclick="cancel()" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    	    
-    	</td>
-  	</tr>
-  	</form>
-      </table></td>
-  </tr>
+
 </table>
 <script type="text/javascript">
-function next(){
-    
-    if (document.all || document.documentMode == 10){//radéè¦çæ¯ä¸ä¸ªéå
+function checkcompanyandpostcode(company,address,postcode,email){
+  $('disonecompany').value=company;
+  $('disoneaddress').value=address;
 
-        var rad=document.getElementsByName("sid");
-    }else{//jsæ¡æ¶ä¸­å·²ç»ä½äºä¿®æ¹
-
-    	var rad=$("sid");
-    }
-	var sId;
-	if(rad.length>0){
-		for(var i=0;i<rad.length;i++){
-			if(rad[i].checked){
-				sId=rad[i].value;
-				break;
-			}
-		}
-	}
-	else{
-		if(rad.checked){
-			sId=rad.value;
-		}
-	}
-	if((sId=="")||(sId==undefined)||(sId==null)){
-		alert('请选择要添加的作者');
+  $('email').value=email;
+}
+function reallen(s) { 
+	var l = 0; 
+	var a = s.split(""); 
+	for (var i=0;i<a.length;i++) { 
+		if (a[i].charCodeAt(0)<299) { 
+			l++; 
+		} else { 
+			l+=2; 
+		} 
+	} 
+	return l; 
+}
+function trim(text) {
+	  return  text.replace(/(^\s*)|(\s*$)/g,"");
+ }
+function check(){
+	
+	
+	var randomCode = document.getElementById("randomCode").value;
+	var t = true;
+	if(randomCode==""){
+		document.getElementById("randomCodename").innerHTML='';
+		if(window.win_isfocus==true)return;
+      	window.win_isfocus=true;
+		window.setTimeout(function(){window.focus();document.getElementById("randomCode").focus();window.setTimeout(function(){window.win_isfocus=false;},80);},150);
+		document.getElementById("randomCodename").innerHTML='请填写验证码！';
+		t = false;
 		return false;
 	}
+	if(t){
+	  if(($("personSearch.name").value=="")&&($("personSearch.email").value=="")){
+	    Element.show("manu_author");
+	    return false;
+	  }
+	  else{
+	    if ((reallen(trim($("personSearch.name").value))<4)&&($("personSearch.email").value=="")) {
+	  		alert('检索的姓名字段长度要大于4个字母或两个汉字。');
+	  		$("personSearch.name").focus();
+	  		return false;
+	    }
+	    Element.hide("manu_author");
+	    var email=$("personSearch.email").value;
+	    var re=/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/g;
+	    if((email!="")&&(!re.test(email))){
+	  		alert('请输入合法的E-mail地址。');
+	  		$("personSearch.email").focus();
+	  		return false;
+	  	}
+	  	var rad=document.getElementsByName("comm");
+		var commId;
+		for(var i=0;i<rad.length;i++){
+			if(rad[i].checked){
+			commId=rad[i].value;
+			break;
+			}
+		}
+		if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="9163763203")){
+	      $("frmn").action="/journalx_zgzlwk/author/Contribution!searchAuthors.action?id=7163720203&flag=0&processId=1163763910&comm="+commId;
+	      $("frmn").submit();
+	    }else{
+	      $("frmn").action="/journalx_zgzlwk/author/Contribution!searchAuthors.action?id=7163720203&flag=0&processId=1163763910&comm=0";
+	      $("frmn").submit();
+	    }
+	    return true;
+	  }
+	}
+  
+}
+function next(processId){
+
+    if(processId==null){
+      processId='1163764001';
+    }
+
+    var one_commId=document.getElementsByName("comm").item(1).value;
+    if((one_commId=="")||(one_commId==undefined)){
+	  //alert(commId);
+	  alert('no_first');
+	  return false;
+	}
+
+	var one_disonecompany=$("one_disonecompany").value;
+    var one_disoneaddress=$("one_disoneaddress").value;
+
+    var one_email=$("one_email").value;
+	if(trim(one_disonecompany)==""){
+	  alert('第一作者单位请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+	  return false;
+	  
+	}
+	if(trim(one_disoneaddress)==""){
+	  alert('第一作者地址请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+	  return false;
+	}
+
+	if(trim(one_email)==""){
+		alert('第一作者的E-mail不能为空,请点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);
+		return false;
+	}
+   ////ä»¥ä¸å¤æ­ç¬¬ä¸ä½è
+
+
+
+	var rad=document.getElementsByName("comm");
+	var commId;
+
+	for(var i=0;i<rad.length;i++){
+		if(rad[i].checked){
+		commId=rad[i].value;
+		break;
+		}
+	}
+    if((commId=="")||(commId==undefined)){
+	  //alert(commId);
+	  alert('请检查通讯作者是否存在！');
+	  return false;
+	}
+	var disonecompany=$('disonecompany').value;
+	var disoneaddress=$('disoneaddress').value;
+
+	var email=$('email').value;
+	
+	if(trim(disonecompany)==""){
+	  alert('通讯作者单位请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+	  return false;
+	  
+	}
+	if(trim(disoneaddress)==""){
+	  alert('通讯作者地址请不要为空！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+	  return false;
+	}
+	
+	if(trim(email)==""){
+		alert('通讯作者的E-mail不能为空,请点击确定按钮补充完整信息。');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);
+		return false;
+	}
+	if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="9163763203")){
+		$("frmn").action="/journalx_zgzlwk/author/Contribution!create3.action?id=7163720203&processId="+processId+"&comm="+commId;
+		$("frmn").submit();
+		return true;
+	}
 	else{
-		$("frm").action='/journalx/author/Contribution!addAuthor.action?id=3161470304&flag=0&processId=1161461607&sId='+sId;
-		
-		//if($("commc").checked){
-    	//	$("frm").action=$("frm").action+"&iscomm=T";
-    	//}
-    	
+	//alert('11');
+		$("frmn").action="/journalx_zgzlwk/author/Contribution!create3.action?id=7163720203&processId="+processId+"&comm=0";
+		$("frmn").submit();
 		return true;
 	}
 }
-function cancel(){
-	$("frm").action='/journalx/author/Contribution!newAuthor.action?id=3161470304&flag=0&processId=1161461607';
-	$("frm").submit();
-	return true;
+function trim(text) {
+	  return  text.replace(/(^\s*)|(\s*$)/g,"");
+ }
+function UpdateOver(){
+    var one_commId=document.getElementsByName("comm").item(1).value;
+    if((one_commId=="")||(one_commId==undefined)){
+	  //alert(commId);
+	  alert('no_first');
+	  return false;
+	}
+	var one_disonecompany=$("one_disonecompany").value;
+    var one_disoneaddress=$("one_disoneaddress").value;
+  
+    var one_email=$("one_email").value;
+	if(trim(one_disonecompany)==""){
+	  alert('第一作者单位请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+	  return false;
+	  
+	}
+	if(trim(one_disoneaddress)==""){
+	  alert('第一作者地址请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+	  return false;
+	}
+	
+	if(trim(one_email)==""){
+		alert('第一作者的E-mail不能为空,请点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);
+		return false;
+	}
+   ////ä»¥ä¸å¤æ­ç¬¬ä¸ä½è
+
+var rad=document.getElementsByName("comm");
+	var commId;
+
+	for(var i=0;i<rad.length;i++){
+		if(rad[i].checked){
+		commId=rad[i].value;
+		break;
+		}
+	}
+    if((commId=="")||(commId==undefined)){
+	  //alert(commId);
+	  alert('请检查通讯作者是否存在！');
+	  return false;
+	}
+	var disonecompany=$('disonecompany').value;
+	var disoneaddress=$('disoneaddress').value;
+	
+	var email=$('email').value;
+	
+	if(trim(disonecompany)==""){
+	  alert('通讯作者单位请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+	  return false;
+	  
+	}
+	if(trim(disoneaddress)==""){
+	  alert('通讯作者地址请不要为空！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+	  return false;
+	}
+	
+	if(trim(email)==""){
+		alert('通讯作者的E-mail不能为空,请点击确定按钮补充完整信息。');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);
+		return false;
+	}
+    if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="9163763203")){
+		$("frmn").action="/journalx_zgzlwk/author/Contribution!partUpdate.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&comm="+commId;
+
+	}else{
+    $("frmn").action="/journalx_zgzlwk/author/Contribution!partUpdate.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&comm=0";
+    }
+    $("frmn").submit();
+    return true;
+}
+function UpdateOver2(){
+    var one_commId=document.getElementsByName("comm").item(1).value;
+    if((one_commId=="")||(one_commId==undefined)){
+	  //alert(commId);
+	  alert('no_first');
+	  return false;
+	}
+	var one_disonecompany=$("one_disonecompany").value;
+    var one_disoneaddress=$("one_disoneaddress").value;
+   
+    var one_email=$("one_email").value;
+	if(trim(one_disonecompany)==""){
+	  alert('第一作者单位请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+	  return false;
+	  
+	}
+	if(trim(one_disoneaddress)==""){
+	  alert('第一作者地址请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+	  return false;
+	}
+	
+	if(trim(one_email)==""){
+		alert('第一作者的E-mail不能为空,请点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);
+		return false;
+	}
+   ////ä»¥ä¸å¤æ­ç¬¬ä¸ä½è
+
+var rad=document.getElementsByName("comm");
+	var commId;
+
+	for(var i=0;i<rad.length;i++){
+		if(rad[i].checked){
+		commId=rad[i].value;
+		break;
+		}
+	}
+    if((commId=="")||(commId==undefined)){
+	  //alert(commId);
+	  alert('请检查通讯作者是否存在！');
+	  return false;
+	}
+	var disonecompany=$('disonecompany').value;
+	var disoneaddress=$('disoneaddress').value;
+	
+	var email=$('email').value;
+	
+	if(trim(disonecompany)==""){
+	  alert('通讯作者单位请不要为空,点击确定按钮补充完整信息！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+	  return false;
+	  
+	}
+	if(trim(disoneaddress)==""){
+	  alert('通讯作者地址请不要为空！');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+	  return false;
+	}
+	
+	if(trim(email)==""){
+		alert('通讯作者的E-mail不能为空,请点击确定按钮补充完整信息。');
+		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);
+		return false;
+	}
+	//alert(commId);
+    if((commId!="")&&(commId!=undefined)){
+		$("frmn").action="/journalx_zgzlwk/author/Contribution!updateTouGao.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&rm=0&comm="+commId;
+
+	}else{
+    $("frmn").action="/journalx_zgzlwk/author/Contribution!updateTouGao.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&rm=0&comm=0";
+    }
+    $("frmn").submit();
+    return true;
 }
 window.onload=function(){
-
+	document.getElementById('randomCodePic').src='/journalx_zgzlwk/kaptcha.jpg?d_a_='+new Date().getTime();
+	var win_isfocus=false;
+	
+	resetFirstAuthor();
+}
+function combackwebmanudetail(){
+	window.location.replace("/journalx_zgzlwk/author/Author!webManuDetail.action?id=7163720203&flag=0");
+}
+function combackwebmanudetail1(){
+	window.location.replace("/journalx_zgzlwk/author/Contribution!createckwx.action?id=7163720203&processId=&wxsplitflag=0");
 }
 </script>
+
 
 
 <div id="footer" style="width:100%;">
@@ -1102,7 +1072,7 @@ window.onload=function(){
       </td>
     </tr>
     <tr>
-      <td style="height:12px;background: transparent url(/journalx/images/border/border_bottom.gif) repeat-x 0 0"></td>
+      <td style="height:12px;background: transparent url(/journalx_zgzlwk/images/border/border_bottom.gif) repeat-x 0 0"></td>
     </tr>
   </table>
 </div>
@@ -1111,3 +1081,4 @@ window.onload=function(){
 </body>
 </html>
 
+								

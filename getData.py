@@ -12,52 +12,16 @@ import tablib
 from lxml import etree
 from xlrd import open_workbook
 from xlutils.copy import copy
+import time
+import translate_image_to_text as formatImg
+from PIL import Image
+from io import BytesIO
+from urllib.request import urlretrieve
+import pdb
 
-headers={
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
-    'Host': 'www.dangdaiyiyao.com',
-    'Cookie': 'author_user_id=zengting; author_password_id=; JSESSIONID=0F8E574E2C7AE9F7A5AA3B903236FF05; __51cke__=; JSESSIONID=102DBEF4F27ED6B07099A2F049E40DE0; __tins__17063688=%7B%22sid%22%3A%201598780470746%2C%20%22vd%22%3A%201%2C%20%22expires%22%3A%201598782270746%7D; __51laig__=2'
-}
-
-# 登陆的地址
-url_login = 'http://www.dangdaiyiyao.com/journalx_zgddyy/Login.action'
-
-# 登陆需要的参数
-login_data={
-    'j_magazine': 1,
-    'username': 'zengting',
-    'j_username': 'zengting___1___author',
-    'j_password': 'qwe123',
-    'j_role': 'author',
-    'j_randomCode': 16666,
-    'person.email': '',
-    'person.rolsesp': 6
-
-    # 'j_username': 'B0A901BB6C8C999DE0768F1DB508A586___1___author___jaiimjlsuan',
-    # 'j_password': 'D5442E7F1547E4445F41235539F35D18'
-}
-
-# 建立一个session层
-s = requests.Session() 
-
-# login 
-r = s.post(url_login, data=login_data, headers=headers)
-print("登陆成功：", r.status_code)
-
-# 如果登陆失败了直接退出
-if (r.status_code is not 200):
-    exit()
-
-
-# 获取名字列表
-nameList = []
-with open('g:/Gilbert/python/spider-python/full_name.txt', 'r', encoding='utf-8') as nameText:
-        nameList = nameText.readlines()
-
-# 目标的url地址
-url='http://www.dangdaiyiyao.com/journalx_zgddyy/author/Contribution!searchAuthors.action?id=9166544607&flag=0&processId=1166566708&comm=0'
-#url='http://www.zggrkz.com/journalx_grkz/author/Author!incompletion.action'
-
+# 下载图片的方法
+def urllib_download(image_url):
+    urlretrieve(image_url, './current.png')
 
 # 获取每个单元格的数据函数
 def getTdValue (ele, index):
@@ -67,11 +31,48 @@ def getTdValue (ele, index):
 
     return valueStr.strip() if valueStr else '无'
 
+
+def getRowsData(name, targetUrl, headers):
+    """
+    docstring
+    """
+    # 获取最新的二维码图片
+    urllib_download(imgUrl)
+    imgLocalPath = './current.png'
+
+    # 获取验证码的值
+    codeText = formatImg.getImgCode(imgLocalPath)
+
+    print('这边获取到的验证码：', codeText)
+
+    # 请求参数构建
+    form_data={
+        'personSearch.name': name,
+        'personSearch.rolsesp': 3,
+        'randomCode': codeText
+    }
+
+    # 发出数据请求
+    res=s.post(targetUrl,data=form_data,headers=headers)
+    
+    # 将请求返回的结果存储到txt文件中
+    with open('D:/Gilbert/python/spider-python/test.txt', 'w', encoding='utf-8') as f:
+        f.write(res.text)
+
+    html=etree.HTML(res.text)
+    rows=html.xpath('//table[@class="list"]/tr') 
+    tr_id=html.xpath('//tr[@id="register_error"]/td//text()')
+
+    return rows, bool(tr_id)
+
+
 # 追加数据到表格里面（已有的表格）
 def appendDataToExcel (currentData):
 
+    excelPath = 'D:/Gilbert/python/spider-python/test.xls'
+
     # 用 xlrd 提供的方法读取一个excel文件
-    rexcel = open_workbook("g:/Gilbert/python/spider-python/中国当代医药.xls",formatting_info=True) # 保留原有样式
+    rexcel = open_workbook(excelPath,formatting_info=True) # 保留原有样式
     # 用 xlrd 提供的方法获得现在已有的行数
     rows = rexcel.sheets()[0].nrows 
     # 用 xlutils 提供的copy方法将 xlrd 的对象转化为 xlwt 的对象
@@ -97,45 +98,62 @@ def appendDataToExcel (currentData):
         table.write(row, 10, getTdValue(ele, 12)) 
     
         row += 1
-    excel.save("g:/Gilbert/python/spider-python/中国当代医药.xls") # xlwt 对象的保存方法，这时便覆盖掉了原来的 Excel
+    excel.save(excelPath) # xlwt 对象的保存方法，这时便覆盖掉了原来的 Excel
+
+headers={
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36',
+    'Host': 'www.zgzlwkzz.com',
+    'Cookie': 'author_user_id=zbRdkWOYjOhiiyHRNaeWbpfHi6zDhvLL; author_password_id=zbRdkWOYjOhiiyHRNaeWbpfHi6zDhvLLtlQjYZ7Fe4CiigxH6I0jkMOYjUrI; JSESSIONID=F2509BB9566F63550CBE36BE0C9B419B; JSESSIONID=2B2D0785DC64069A4F7BA898A020D1C9'
+}
+
+# 登陆的地址
+url_login = 'http://www.zgzlwkzz.com/journalx_zgzlwk/Login.action'
+
+# 登陆需要的参数
+login_data={
+    'j_username': 'B0A901BB6C8C999DE0768F1DB508A586___1___author___jaiimjlsuan',
+    'j_password': 'B0A901BB6C8C999DE0768F1DB508A5862549423664C2E0E77B3F4C88C54BCCD6'
+}
+
+# 建立一个session层
+s = requests.Session() 
+
+# login 
+r = s.post(url_login, data=login_data, headers=headers)
+print("登陆成功：", r.status_code)
+
+# 如果登陆失败了直接退出
+if (r.status_code is not 200):
+    exit()
+
+# 获取名字列表
+nameList = []
+with open('D:/Gilbert/python/spider-python/full_name.txt', 'r', encoding='utf-8') as nameText:
+        nameList = nameText.readlines()
+
+# 目标的url地址
+targetUrl='http://www.zgzlwkzz.com/journalx_zgzlwk/author/Contribution!searchAuthors.action?id=7158915405&flag=0&processId=1158959102&comm=0'
+imgUrl = 'http://www.zgzlwkzz.com/journalx_zgzlwk/kaptcha.jpg'
 
 # 根据名字查询对应的内容
 for name in nameList:
     print('当前查询的人:', name)
 
-    # 请求参数构建
-    form_data={
-        'personSearch.name': name,
-        'personSearch.rolsesp': 6
-    }
 
-    # 发出数据请求
-    res=s.post(url,data=form_data,headers=headers)
-    
-    # 将请求返回的结果存储到txt文件中
-    # with open('g:/Gilbert/python/spider-python/test.txt', 'w', encoding='utf-8') as f:
-    #     f.write(res.text)
+    rows = None
+    for count in range(3):
 
-    html=etree.HTML(res.text)
-    rows=html.xpath('//table[@class="list"]/tr')
+        rows, ret = getRowsData(name, targetUrl, headers)
 
-    if not rows:
+        if not ret:
+            break
+    else:
+        print("三次还是错的。。。。")
         continue
 
-    # 把数据存储到表格里面
-    appendDataToExcel(rows[1:])
-
-
-# print('最终结果：', resultData)
-# if resultData:
-#     headers = tuple([key for key in resultData[0].keys()])
-#     realData = []
-
-#     for item in resultData:
-#         body = []
-#         for v in item.values():
-#             body.append(v)
-#         realData.append(tuple(body))
-
-#     excelData = tablib.Dataset(*realData, headers=headers)
-#     open('中国医药工业杂志.xlsx', 'wb').write(excelData.xlsx)
+    if rows:
+        # 把数据存储到表格里面
+        print("有输出： {}".format(rows))
+        appendDataToExcel(rows[1:])
+    else:
+        print("gg")
