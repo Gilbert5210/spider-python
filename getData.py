@@ -21,7 +21,12 @@ import pdb
 
 # 下载图片的方法
 def urllib_download(image_url):
-    urlretrieve(image_url, './current.png')
+    # urlretrieve(image_url, './current.png')
+
+    r = requests.get(image_url)
+
+    with open('./current.png', 'wb') as f:
+        f.write(r.content)
 
 # 获取每个单元格的数据函数
 def getTdValue (ele, index):
@@ -31,17 +36,26 @@ def getTdValue (ele, index):
 
     return valueStr.strip() if valueStr else '无'
 
+def getCodeText (imgUrl):
 
-def getRowsData(name, targetUrl, headers):
-    """
-    docstring
-    """
-    # 获取最新的二维码图片
     urllib_download(imgUrl)
     imgLocalPath = './current.png'
 
     # 获取验证码的值
-    codeText = formatImg.getImgCode(imgLocalPath)
+    return formatImg.getImgCode(imgLocalPath)
+
+def getRowsData(name, targetUrl, headers, imgUrl):
+    """
+    docstring
+    """
+
+    # 毫秒级时间戳
+    timeText = int(round(time.time() * 1000))
+
+    imgUrl = 'http://jpxb.bjmu.edu.cn/JournalX_jpxb/kaptcha.jpg?d_a_={0}'.format(timeText)
+
+    # 获取验证码的值
+    codeText = getCodeText(imgUrl)
 
     print('这边获取到的验证码：', codeText)
 
@@ -56,7 +70,7 @@ def getRowsData(name, targetUrl, headers):
     res=s.post(targetUrl,data=form_data,headers=headers)
     
     # 将请求返回的结果存储到txt文件中
-    with open('D:/Gilbert/python/spider-python/test.txt', 'w', encoding='utf-8') as f:
+    with open('G:/development/project/spider-python/test.txt', 'w', encoding='utf-8') as f:
         f.write(res.text)
 
     html=etree.HTML(res.text)
@@ -69,7 +83,7 @@ def getRowsData(name, targetUrl, headers):
 # 追加数据到表格里面（已有的表格）
 def appendDataToExcel (currentData):
 
-    excelPath = 'D:/Gilbert/python/spider-python/test.xls'
+    excelPath = 'G:/development/project/spider-python/test.xls'
 
     # 用 xlrd 提供的方法读取一个excel文件
     rexcel = open_workbook(excelPath,formatting_info=True) # 保留原有样式
@@ -102,58 +116,67 @@ def appendDataToExcel (currentData):
 
 headers={
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36',
-    'Host': 'www.zgzlwkzz.com',
-    'Cookie': 'author_user_id=zbRdkWOYjOhiiyHRNaeWbpfHi6zDhvLL; author_password_id=zbRdkWOYjOhiiyHRNaeWbpfHi6zDhvLLtlQjYZ7Fe4CiigxH6I0jkMOYjUrI; JSESSIONID=F2509BB9566F63550CBE36BE0C9B419B; JSESSIONID=2B2D0785DC64069A4F7BA898A020D1C9'
+    'Host': 'jpxb.bjmu.edu.cn',
+    'Cookie': 'author_user_id=66ODkWxkjOrriypleJCEK7gg900D; author_password_id=; JSESSIONID=FD775BCF8671DC59C5709F0DD5CBB784; JSESSIONID=9784AA12E25EC4C60F4CD2962F50F496'
 }
 
 # 登陆的地址
-url_login = 'http://www.zgzlwkzz.com/journalx_zgzlwk/Login.action'
+url_login = 'http://jpxb.bjmu.edu.cn/JournalX_jpxb/Login.action'
 
-# 登陆需要的参数
-login_data={
-    'j_username': 'B0A901BB6C8C999DE0768F1DB508A586___1___author___jaiimjlsuan',
-    'j_password': 'B0A901BB6C8C999DE0768F1DB508A5862549423664C2E0E77B3F4C88C54BCCD6'
-}
 
 # 建立一个session层
 s = requests.Session() 
 
-# login 
-r = s.post(url_login, data=login_data, headers=headers)
-print("登陆成功：", r.status_code)
 
-# 如果登陆失败了直接退出
-if (r.status_code is not 200):
-    exit()
+if __name__ == '__main__':
 
-# 获取名字列表
-nameList = []
-with open('D:/Gilbert/python/spider-python/full_name.txt', 'r', encoding='utf-8') as nameText:
-        nameList = nameText.readlines()
+    imgUrl = 'http://jpxb.bjmu.edu.cn/JournalX_jpxb/kaptcha.jpg'
+    loginCodeText = getCodeText(imgUrl)
 
-# 目标的url地址
-targetUrl='http://www.zgzlwkzz.com/journalx_zgzlwk/author/Contribution!searchAuthors.action?id=7158915405&flag=0&processId=1158959102&comm=0'
-imgUrl = 'http://www.zgzlwkzz.com/journalx_zgzlwk/kaptcha.jpg'
+    print('登陆页面的验证码： ', loginCodeText)
 
-# 根据名字查询对应的内容
-for name in nameList:
-    print('当前查询的人:', name)
+    
+    # 登陆需要的参数
+    login_data={
+        'j_username': 'AAA117340102F7347E8E4D27C9F831D2___1___author___jaiimjlsuan',
+        'j_password': 'D5442E7F1547E44407E77A6C4E705E94BB0F874C48AB3F19',
+        'j_randomCode': loginCodeText
+    }
+    
+    # login 
+    r = s.post(url_login, data=login_data, headers=headers)
+    print("登陆成功：", r.status_code)
 
+    # 如果登陆失败了直接退出
+    if (r.status_code is not 200):
+        exit()
 
-    rows = None
-    for count in range(3):
+    # 获取名字列表
+    nameList = []
+    with open('G:/development/project/spider-python/full_name.txt', 'r', encoding='utf-8') as nameText:
+            nameList = nameText.readlines()
 
-        rows, ret = getRowsData(name, targetUrl, headers)
+    # 目标的url地址
+    targetUrl='http://jpxb.bjmu.edu.cn/JournalX_jpxb/author/Contribution!searchAuthors.action?id=6159860102&flag=0&processId=1159860001&comm=0'
 
-        if not ret:
-            break
-    else:
-        print("三次还是错的。。。。")
-        continue
+    # 根据名字查询对应的内容
+    for name in nameList:
+        print('当前查询的人:', name)
 
-    if rows:
-        # 把数据存储到表格里面
-        print("有输出： {}".format(rows))
-        appendDataToExcel(rows[1:])
-    else:
-        print("gg")
+        rows = None
+        for count in range(3):
+
+            rows, ret = getRowsData(name, targetUrl, headers, imgUrl)
+
+            if not ret:
+                break
+        else:
+            print("三次还是错的。。。。")
+            continue
+
+        if rows:
+            # 把数据存储到表格里面
+            print("有输出： {}".format(rows))
+            appendDataToExcel(rows[1:])
+        else:
+            print("gg")

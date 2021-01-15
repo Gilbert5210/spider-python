@@ -65,3 +65,11 @@ def getImgCode (img):
         codeText = wordsResult[0]['words']
 
     return codeText
+
+# if __name__ == '__main__':
+
+#     imgPath = './kaptcha.jpg'
+
+#     codeNum = getImgCode(imgPath)
+
+#     print('这边获取到的验证码：', codeNum)

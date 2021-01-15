@@ -11,9 +11,9 @@ o\:*         { behavior: url(#default#VML) }
 </style>
 <head>
 
-<link rel="shortcut icon" href="/journalx_zgzlwk/images/icons/favicon.ico"/>
-<link rel="icon" type="image/png" href="/journalx_zgzlwk/images/icons/favicon.png"/>
-<link rel="stylesheet" type="text/css" media="screen" href="/journalx_zgzlwk/styles/magtechall.css"/>
+<link rel="shortcut icon" href="/JournalX_jpxb/images/icons/favicon.ico"/>
+<link rel="icon" type="image/png" href="/JournalX_jpxb/images/icons/favicon.png"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/JournalX_jpxb/styles/magtechall.css"/>
 
 <base target=_self>
 </head>
@@ -53,7 +53,7 @@ setInterval("createtime()",250);
 
 
 <link rel="stylesheet" type="text/css"
-	href="/journalx_zgzlwk/loading/style.css" />
+	href="/JournalX_jpxb/loading/style.css" />
 <div id="loading">
 	<div class="loading-indicator">
 		loading...
@@ -100,27 +100,27 @@ function  delNode()
 
 
 
-<link rel="stylesheet" type="text/css" media="screen" href="/journalx_zgzlwk/styles/magtechall.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/JournalX_jpxb/styles/magtechall.css"/>
  
  <body topmargin="0" leftmargin="0">
 <div>
 <table width="100%" cellpadding="0" cellspacing="0">
 	<tr valign="top">
-		<td valign="top" style="background:url(/journalx_zgzlwk/images/banner.jpg) #3c78b5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<td valign="top" style="background:url(/JournalX_jpxb/images/banner.jpg) #3c78b5"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
         	<td width="70%" height="36"><table width="99%" border="0" cellspacing="0" cellpadding="0">
            	<tr>
-            	<td width="6%" align="center"><img src="/journalx_zgzlwk/images/contribution/images/renyuan.png" width="34" height="31" /></td>
-                <td width="66%" valign="bottom"><span class="txt_xm">曾婷
+            	<td width="6%" align="center"><img src="/JournalX_jpxb/images/contribution/images/renyuan.png" width="34" height="31" /></td>
+                <td width="66%" valign="bottom"><span class="txt_xm">陈先生
                 
                 </span></td>
-                <td width="28%" nowrap><span class="txt_bs STYLE1"><strong>中国肿瘤外科杂志--作者投稿</strong></span></td>
+                <td width="28%" nowrap><span class="txt_bs STYLE1"><strong>解剖学报--作者投稿</strong></span></td>
             </tr>
             </table>
             </td>
             <td align="right" style="text-decoration: none;color:white;">
-            		2020-9-28&nbsp;&nbsp;|&nbsp;&nbsp;
-					<a href="/journalx_zgzlwk/Logout.action" class="txt_xm" style="text-decoration: none;color:white;"><b>安全退出</b></a>
+            		2021-1-14&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="/JournalX_jpxb/Logout.action" class="txt_xm" style="text-decoration: none;color:white;"><b>安全退出</b></a>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
             </tr>
@@ -133,9 +133,9 @@ function  delNode()
 </table>
 </div>
 
-<title>中国肿瘤外科杂志</title>
+<title>解剖学报</title>
 <script type="text/javascript"
-	src="/journalx_zgzlwk/js/mjaogutneaclhx.js"></script>
+	src="/JournalX_jpxb/js/mjaogutneaclhx.js"></script>
 
 <script language="javascript">
 
@@ -274,7 +274,7 @@ function resetFirstAuthor(){
 	<tr>
 	   
 		<td width="20%" height="570" valign="top"
-			background="/journalx_zgzlwk/images/contribution/images/author_bj.jpg">
+			background="/JournalX_jpxb/images/contribution/images/author_bj.jpg">
 		   
 
 <ul id="toolbarc">
@@ -298,7 +298,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -314,7 +314,7 @@ function resetFirstAuthor(){
 	
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/doing.jpg" />&nbsp;&nbsp;<font
+				src="/JournalX_jpxb/images/contribution/doing.jpg" />&nbsp;&nbsp;<font
 				color="red">
 				
 					
@@ -330,7 +330,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -347,7 +347,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -364,7 +364,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -381,7 +381,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -398,7 +398,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -415,7 +415,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -432,7 +432,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -449,7 +449,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -466,24 +466,7 @@ function resetFirstAuthor(){
 		
 		
 			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
-				
-			    
-				    
-						
-						
-							有无介绍信
-						
-					
-					
-			    
-			</li>
-		
-	
-		
-		
-			<li class="openc"><img title="title"
-				src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+				src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 				
 			    
 				    
@@ -498,21 +481,21 @@ function resetFirstAuthor(){
 		
 	
 	<li class="openc"><img title="submit"
-		src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;
+		src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;
 		
 		
 		信息确认|正式投稿
 		
 	</li>
 	<li class="openc"><img title="successful"
-		src="/journalx_zgzlwk/images/contribution/notdo.jpg" />&nbsp;&nbsp;投稿完成|系统自动答复</li>
+		src="/JournalX_jpxb/images/contribution/notdo.jpg" />&nbsp;&nbsp;投稿完成|系统自动答复</li>
 	</nobr>
 </ul>
 
 		</td>
 		
 		<td width="19" align="center" valign="top"><img
-			src="/journalx_zgzlwk/images/contribution/images/z.gif"
+			src="/JournalX_jpxb/images/contribution/images/z.gif"
 			width="19" height="30" /></td>
 		<td align="center" valign="top">
 		<table
@@ -527,14 +510,14 @@ function resetFirstAuthor(){
 							
 								
 		                          <td><a
-										href="/journalx_zgzlwk/author/Contribution!goBack.action?id=7163720203&processId=1163763809"><img
-										src="/journalx_zgzlwk/images/contribution/images/an_syb.jpg" /></a></td>
+										href="/JournalX_jpxb/author/Contribution!goBack.action?id=6165365607&processId=1165365405"><img
+										src="/JournalX_jpxb/images/contribution/images/an_syb.jpg" /></a></td>
 		                        
-		                          <td><a href="#" onclick="next()" style="cursor:hand"><img src="/journalx_zgzlwk/images/contribution/images/an_xyb1.jpg" width="68" height="25" /></a></td>
+		                          <td><a href="#" onclick="next()" style="cursor:hand"><img src="/JournalX_jpxb/images/contribution/images/an_xyb1.jpg" width="68" height="25" /></a></td>
 		                       <td><a href="#"
-									onclick="location.replace('/journalx_zgzlwk/author/Author.action')"
+									onclick="location.replace('/JournalX_jpxb/author/Author.action')"
 									style="cursor:hand"><img
-									src="/journalx_zgzlwk/images/contribution/images/an_fh.jpg"
+									src="/JournalX_jpxb/images/contribution/images/an_fh.jpg"
 									width="92" height="25" /></a></td>
 							
 							</tr>
@@ -550,7 +533,7 @@ function resetFirstAuthor(){
   			   
   			       
 			    			
-			    			关于第二作者
+			    			为本文添加其他作者:.<br>(1) <B>必须准确添加所有署名作者信息，以备编辑部联系各位作者对稿件进行确认。作者添加不完全，则直接退稿！</B></a> <br/>(2) 输入其他作者姓名和Email, 然后点击"检索并添加为新作者"按钮, 系统将在数据库中检索. 如果已有该作者信息，请直接选择。如果没有该作者信息，则按页面提示输入该作者详细信息. <br/>(3) 添加新作者后, 将在下面列表显示出来. 
 			    			
   			   
   			   	
@@ -583,9 +566,9 @@ function resetFirstAuthor(){
 								name="personSearch.email" type="text" /></td>
 							<td width="5%"><b>验证码:&nbsp;</b></td>
 							<td width="10%"><input type="text" name="randomCode" style="width:70%" value="" tabindex="2" id="randomCode" /></td>
-							<td width="10%"><img id="randomCodePic" src="kaptcha.jpg" style="cursor: pointer;margin-bottom: 5px;" onclick="document.getElementById('randomCodePic').src='/journalx_zgzlwk/kaptcha.jpg?d_a_='+new Date().getTime();"></td>
+							<td width="10%"><img id="randomCodePic" src="kaptcha.jpg" style="cursor: pointer;margin-bottom: 5px;" onclick="document.getElementById('randomCodePic').src='/JournalX_jpxb/kaptcha.jpg?d_a_='+new Date().getTime();"></td>
 							<td width="" align="left">
-								<a href="javascript:void()" onclick="document.getElementById('randomCodePic').src='/journalx_zgzlwk/kaptcha.jpg?d_a_='+new Date().getTime();" class="style21" style=""><ww:text name="click.to.refresh" /></a>
+								<a href="javascript:void()" onclick="document.getElementById('randomCodePic').src='/JournalX_jpxb/kaptcha.jpg?d_a_='+new Date().getTime();" class="style21" style=""><ww:text name="click.to.refresh" /></a>
 								<span class="txt_red"><ww:text name="author.register.required" /></span>
 								<span id="randomCodename"  style="color: red;"></span>
 								<input type="button" onclick="check()" value="添加作者">
@@ -602,9 +585,9 @@ function resetFirstAuthor(){
 			<tr>
 				<td><input type="radio" name="comm"  style="display:none" id="jlnull"/>
 				<input type="hidden" id="disonecompany" name="disonecompany" value="广东省人民医院"/>
-				<input type="hidden" id="disoneaddress" name="disoneaddress" value="广东省广州市谢家112号"/>
-				<input type="hidden" id="disonepostcode" name="disonepostcode" value="020331"/>
-				<input type="hidden" id="email" name="email" value="3348575074@qq.com"/>				
+				<input type="hidden" id="disoneaddress" name="disoneaddress" value="广东省广州市白云区新市4108号"/>
+				<input type="hidden" id="disonepostcode" name="disonepostcode" value="020311"/>
+				<input type="hidden" id="email" name="email" value="8066868744@qq.com"/>				
 				
 				<br/>
 				<div style="border:1 solid #D3D3D3;width:100%">
@@ -646,34 +629,34 @@ function resetFirstAuthor(){
 								onClick="trClick('0', this,event)">
 								<td align="center"><input type="radio" name="comm" id="comm0"
 									style="border:0px groove gray"
-									value="9163763203" onclick='checkcompanyandpostcode("广东省人民医院","广东省广州市谢家112号","020331","3348575074@qq.com");'
+									value="16165330911" onclick='checkcompanyandpostcode("广东省人民医院","广东省广州市白云区新市4108号","020311","8066868744@qq.com");'
 									checked />
 									<input type="hidden" id="one_disonecompany"  value="广东省人民医院"/>
-				                    <input type="hidden" id="one_disoneaddress"  value="广东省广州市谢家112号"/>
-				                    <input type="hidden" id="one_disonepostcode"  value="020331"/>
-				                    <input type="hidden" id="one_email"  value="3348575074@qq.com"/>
+				                    <input type="hidden" id="one_disoneaddress"  value="广东省广州市白云区新市4108号"/>
+				                    <input type="hidden" id="one_disonepostcode"  value="020311"/>
+				                    <input type="hidden" id="one_email"  value="8066868744@qq.com"/>
 									
 									</td>
-								<td align="center"><input id="firstAuthorflag9163763203" name="firstAuthorflag" style="display:none;"/>
-									<div id="firstAuthor9163763203" style="display: none;">√</div>
+								<td align="center"><input id="firstAuthorflag16165330911" name="firstAuthorflag" style="display:none;"/>
+									<div id="firstAuthor16165330911" style="display: none;">√</div>
 								</td>
-								<td>曾婷</td>
+								<td>陈先生</td>
 								<td>
 									广东省人民医院
 									<br />
 								</td>
 								<td>
-									精神科
+									
 									<br />
 								</td>
 								<td>
-									广东省广州市谢家112号
+									广东省广州市白云区新市4108号
 									<br />
 								</td>
 								
 								
 								<td>
-									020331
+									020311
 									<br />
 								</td>
 								<td></td>
@@ -791,11 +774,11 @@ function check(){
 			break;
 			}
 		}
-		if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="9163763203")){
-	      $("frmn").action="/journalx_zgzlwk/author/Contribution!searchAuthors.action?id=7163720203&flag=0&processId=1163763910&comm="+commId;
+		if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="16165330911")){
+	      $("frmn").action="/JournalX_jpxb/author/Contribution!searchAuthors.action?id=6165365607&flag=0&processId=1165365506&comm="+commId;
 	      $("frmn").submit();
 	    }else{
-	      $("frmn").action="/journalx_zgzlwk/author/Contribution!searchAuthors.action?id=7163720203&flag=0&processId=1163763910&comm=0";
+	      $("frmn").action="/JournalX_jpxb/author/Contribution!searchAuthors.action?id=6165365607&flag=0&processId=1165365506&comm=0";
 	      $("frmn").submit();
 	    }
 	    return true;
@@ -806,7 +789,7 @@ function check(){
 function next(processId){
 
     if(processId==null){
-      processId='1163764001';
+      processId='1165365607';
     }
 
     var one_commId=document.getElementsByName("comm").item(1).value;
@@ -822,19 +805,19 @@ function next(processId){
     var one_email=$("one_email").value;
 	if(trim(one_disonecompany)==""){
 	  alert('第一作者单位请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);	  
 	  return false;
 	  
 	}
 	if(trim(one_disoneaddress)==""){
 	  alert('第一作者地址请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);	  
 	  return false;
 	}
 
 	if(trim(one_email)==""){
 		alert('第一作者的E-mail不能为空,请点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);
 		return false;
 	}
    ////ä»¥ä¸å¤æ­ç¬¬ä¸ä½è
@@ -862,29 +845,29 @@ function next(processId){
 	
 	if(trim(disonecompany)==""){
 	  alert('通讯作者单位请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);	  
 	  return false;
 	  
 	}
 	if(trim(disoneaddress)==""){
 	  alert('通讯作者地址请不要为空！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);	  
 	  return false;
 	}
 	
 	if(trim(email)==""){
 		alert('通讯作者的E-mail不能为空,请点击确定按钮补充完整信息。');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);
 		return false;
 	}
-	if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="9163763203")){
-		$("frmn").action="/journalx_zgzlwk/author/Contribution!create3.action?id=7163720203&processId="+processId+"&comm="+commId;
+	if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="16165330911")){
+		$("frmn").action="/JournalX_jpxb/author/Contribution!create3.action?id=6165365607&processId="+processId+"&comm="+commId;
 		$("frmn").submit();
 		return true;
 	}
 	else{
 	//alert('11');
-		$("frmn").action="/journalx_zgzlwk/author/Contribution!create3.action?id=7163720203&processId="+processId+"&comm=0";
+		$("frmn").action="/JournalX_jpxb/author/Contribution!create3.action?id=6165365607&processId="+processId+"&comm=0";
 		$("frmn").submit();
 		return true;
 	}
@@ -905,19 +888,19 @@ function UpdateOver(){
     var one_email=$("one_email").value;
 	if(trim(one_disonecompany)==""){
 	  alert('第一作者单位请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);	  
 	  return false;
 	  
 	}
 	if(trim(one_disoneaddress)==""){
 	  alert('第一作者地址请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);	  
 	  return false;
 	}
 	
 	if(trim(one_email)==""){
 		alert('第一作者的E-mail不能为空,请点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);
 		return false;
 	}
    ////ä»¥ä¸å¤æ­ç¬¬ä¸ä½è
@@ -943,26 +926,26 @@ var rad=document.getElementsByName("comm");
 	
 	if(trim(disonecompany)==""){
 	  alert('通讯作者单位请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);	  
 	  return false;
 	  
 	}
 	if(trim(disoneaddress)==""){
 	  alert('通讯作者地址请不要为空！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);	  
 	  return false;
 	}
 	
 	if(trim(email)==""){
 		alert('通讯作者的E-mail不能为空,请点击确定按钮补充完整信息。');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);
 		return false;
 	}
-    if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="9163763203")){
-		$("frmn").action="/journalx_zgzlwk/author/Contribution!partUpdate.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&comm="+commId;
+    if((commId!="")&&(commId!=undefined)&&(parseInt(commId)!="16165330911")){
+		$("frmn").action="/JournalX_jpxb/author/Contribution!partUpdate.action?id=6165365607&flag=0&processId=1165365506&updateFlag=author&comm="+commId;
 
 	}else{
-    $("frmn").action="/journalx_zgzlwk/author/Contribution!partUpdate.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&comm=0";
+    $("frmn").action="/JournalX_jpxb/author/Contribution!partUpdate.action?id=6165365607&flag=0&processId=1165365506&updateFlag=author&comm=0";
     }
     $("frmn").submit();
     return true;
@@ -980,19 +963,19 @@ function UpdateOver2(){
     var one_email=$("one_email").value;
 	if(trim(one_disonecompany)==""){
 	  alert('第一作者单位请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);	  
 	  return false;
 	  
 	}
 	if(trim(one_disoneaddress)==""){
 	  alert('第一作者地址请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);	  
 	  return false;
 	}
 	
 	if(trim(one_email)==""){
 		alert('第一作者的E-mail不能为空,请点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+one_commId);
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+one_commId);
 		return false;
 	}
    ////ä»¥ä¸å¤æ­ç¬¬ä¸ä½è
@@ -1018,42 +1001,42 @@ var rad=document.getElementsByName("comm");
 	
 	if(trim(disonecompany)==""){
 	  alert('通讯作者单位请不要为空,点击确定按钮补充完整信息！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);	  
 	  return false;
 	  
 	}
 	if(trim(disoneaddress)==""){
 	  alert('通讯作者地址请不要为空！');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);	  
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);	  
 	  return false;
 	}
 	
 	if(trim(email)==""){
 		alert('通讯作者的E-mail不能为空,请点击确定按钮补充完整信息。');
-		window.location.replace('/journalx_zgzlwk/author/AddAuthors!editCommAuthor.action?id=7163720203&flagx=0&processId=1163763910&rm=0&pId='+commId);
+		window.location.replace('/JournalX_jpxb/author/AddAuthors!editCommAuthor.action?id=6165365607&flagx=0&processId=1165365506&rm=0&pId='+commId);
 		return false;
 	}
 	//alert(commId);
     if((commId!="")&&(commId!=undefined)){
-		$("frmn").action="/journalx_zgzlwk/author/Contribution!updateTouGao.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&rm=0&comm="+commId;
+		$("frmn").action="/JournalX_jpxb/author/Contribution!updateTouGao.action?id=6165365607&flag=0&processId=1165365506&updateFlag=author&rm=0&comm="+commId;
 
 	}else{
-    $("frmn").action="/journalx_zgzlwk/author/Contribution!updateTouGao.action?id=7163720203&flag=0&processId=1163763910&updateFlag=author&rm=0&comm=0";
+    $("frmn").action="/JournalX_jpxb/author/Contribution!updateTouGao.action?id=6165365607&flag=0&processId=1165365506&updateFlag=author&rm=0&comm=0";
     }
     $("frmn").submit();
     return true;
 }
 window.onload=function(){
-	document.getElementById('randomCodePic').src='/journalx_zgzlwk/kaptcha.jpg?d_a_='+new Date().getTime();
+	document.getElementById('randomCodePic').src='/JournalX_jpxb/kaptcha.jpg?d_a_='+new Date().getTime();
 	var win_isfocus=false;
 	
 	resetFirstAuthor();
 }
 function combackwebmanudetail(){
-	window.location.replace("/journalx_zgzlwk/author/Author!webManuDetail.action?id=7163720203&flag=0");
+	window.location.replace("/JournalX_jpxb/author/Author!webManuDetail.action?id=6165365607&flag=0");
 }
 function combackwebmanudetail1(){
-	window.location.replace("/journalx_zgzlwk/author/Contribution!createckwx.action?id=7163720203&processId=&wxsplitflag=0");
+	window.location.replace("/JournalX_jpxb/author/Contribution!createckwx.action?id=6165365607&processId=&wxsplitflag=0");
 }
 </script>
 
@@ -1072,7 +1055,7 @@ function combackwebmanudetail1(){
       </td>
     </tr>
     <tr>
-      <td style="height:12px;background: transparent url(/journalx_zgzlwk/images/border/border_bottom.gif) repeat-x 0 0"></td>
+      <td style="height:12px;background: transparent url(/JournalX_jpxb/images/border/border_bottom.gif) repeat-x 0 0"></td>
     </tr>
   </table>
 </div>

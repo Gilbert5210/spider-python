@@ -2,6 +2,9 @@
 
 1. 采用依赖 requests、tablib、lxml、open_workbook、xlutils
 
+
+pip install -r require.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
 - tablib依赖主要来处理表格的整体保存
 - lxml 主要来解析html以及xml页面
 - xlutils 用来实现表格数据的追加

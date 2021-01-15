@@ -1,0 +1,7 @@
+xlrd
+tablib
+lxml
+requests
+xlutils
+base64
+PIL
